@@ -39,21 +39,21 @@ void CompileTimeTest()
 		}
 	}
 
-	auto averageScores1a =
-			a::sort(scores)
-			 | v::filter     ([](auto a)         { return std::get<1>(a) > 50;})
-			 | v::group_by   ([](auto a, auto b) { return std::get<0>(a)== std::get<0>(b);}) // Group by name
-	;
-	auto averageScores1b =
-			a::sort(scores)
-			 | v::filter     ([](auto a)         { return std::get<1>(a) > 50;})
-			 | v::group_by   ([](auto a, auto b) { return std::get<0>(a)== std::get<0>(b);}) // Group by name
-	;
-	auto averageScores1c =
-			a::sort(scores)
-			 | v::filter     ([](auto a)         { return std::get<1>(a) > 50;})
-			 | v::group_by   ([](auto a, auto b) { return std::get<0>(a)== std::get<0>(b);}) // Group by name
-	;
+//	auto averageScores1a =
+//			a::sort(scores)
+//			 | v::filter     ([](auto a)         { return std::get<1>(a) > 50;})
+//			 | v::group_by   ([](auto a, auto b) { return std::get<0>(a)== std::get<0>(b);}) // Group by name
+//	;
+//	auto averageScores1b =
+//			a::sort(scores)
+//			 | v::filter     ([](auto a)         { return std::get<1>(a) > 50;})
+//			 | v::group_by   ([](auto a, auto b) { return std::get<0>(a)== std::get<0>(b);}) // Group by name
+//	;
+//	auto averageScores1c =
+//			a::sort(scores)
+//			 | v::filter     ([](auto a)         { return std::get<1>(a) > 50;})
+//			 | v::group_by   ([](auto a, auto b) { return std::get<0>(a)== std::get<0>(b);}) // Group by name
+//	;
 
 //	auto averageScores2 =
 //			a::sort(scores)
