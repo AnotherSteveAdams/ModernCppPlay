@@ -17,12 +17,14 @@ std::map<X, std::vector<T>>* ToDictionary(std::vector<T> v, std::function<X(T)> 
 	return v2;
 }
 
+// overload person so it can be dumped out easily for cout.
 ostream& operator<<(ostream& cx, const Person& p)
 {
 	cx << p.getI() << " " << p.getName();
    return cx;
 }
 
+// Overload map so it can be dumped out easily to cout.
 template<typename T1,typename T2>
 ostream& operator<<(ostream& cx, const std::map<T1,T2>& map)
 {
