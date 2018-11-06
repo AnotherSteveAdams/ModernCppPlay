@@ -30,6 +30,10 @@ extern void BraceListAutoDeduction();
 extern void ConstExpressions();
 extern void DeclTypeAutoReturnExpressions();
 extern void PointerPlay();
+extern void ExceptionPlay();
+extern void RandomPlay();
+extern void TuplePlay();
+extern void AssertPlay();
 int PlayCppLinq ();
 
 
@@ -49,4 +53,8 @@ int main() {
 	//OverridePlay();
 	//PointerPlay();
 	//PlayCppLinq();
+	//ExceptionPlay();
+	//RandomPlay();
+	//TuplePlay();
+	AssertPlay();
 }

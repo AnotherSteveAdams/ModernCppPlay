@@ -4,6 +4,10 @@ using namespace std;
 constexpr auto addOne(int n) {
 	  return [n] { return n + 1; };
 }
+//
+//auto addOneB(int n) {
+//	  return [n] { return n + 1; };
+//}
 
 void ConstExpressions()
 {
