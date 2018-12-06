@@ -14,9 +14,10 @@ void TuplePlay()
 
 	auto x = tester();
 	cout << std::get<1>(x) << endl;
-
+#if __cplusplus > 201402L
 	auto [a, b] = tester();
 	cout << a << " " << b << endl;
+#endif
 
 	auto t2 = new std::tuple<int, double>(5,55.55);
 

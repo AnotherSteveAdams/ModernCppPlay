@@ -28,12 +28,14 @@ ostream& operator<<(ostream& cx, const Person& p)
 template<typename T1,typename T2>
 ostream& operator<<(ostream& cx, const std::map<T1,T2>& map)
 {
+#if __cplusplus > 201402L
 	for( auto  [key, val] : map )
 	{
 		std::cout << "Key:" << key << endl;
 		for (auto entry : val) std::cout << "  " <<  entry << endl;
 	}
 	// cx << p.getI() << " " << p.getName();
+#endif
    return cx;
 }
 
@@ -52,6 +54,7 @@ void TemplatePlay()
 
 	auto amap = std::map<std::string, string>();
 
+#if __cplusplus > 201402L
 	// cout << " all of l " << *l << endl;
 	for( auto  [key, val] : *d )
 	{
@@ -69,4 +72,5 @@ void TemplatePlay()
 //		for (auto name : std::get<1>(h))
 //			std::cout << "   " << name.getName() << endl;
 //	}
+#endif
 }

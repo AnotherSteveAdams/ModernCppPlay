@@ -14,10 +14,10 @@ using namespace std;
 void duality();
 void lo1();
 
-int main() {
+int main2() {
 	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
 	//Model::t M = new Model("lo1"); auto _M = finally([&]() { M->dispose(); });
 	//duality();
-	lo1();
+	//lo1();
 	return 0;
 }

@@ -1,5 +1,8 @@
+#if __cplusplus > 201402L
 #include <range/v3/all.hpp>   //specific includes
-#include "/home/adamsst/cpplinq/CppLinq/cpplinq.hpp"
+#endif
+
+#include "/lxhome/adamsste/dev/cpplinq/CppLinq/cpplinq.hpp"
 
 //#include <range/v3/algorithm/count.hpp>   //specific includes
 //#include <range/v3/view/group_by.hpp>   //specific includes
@@ -20,6 +23,7 @@ using std::string;
 using std::endl;
 using std::get;
 using std::unordered_map;
+#if __cplusplus > 201402L
 using ranges::v3::distance;
 using ranges::v3::accumulate;
 using ranges::v3::max;
@@ -39,3 +43,4 @@ namespace a= ranges::v3::action;
 namespace v= ranges::v3::view;
 namespace v3=ranges::v3;
 
+#endif

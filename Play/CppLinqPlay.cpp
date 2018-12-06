@@ -25,7 +25,7 @@ int PlayCppLinq ()
     int ints[] = {3,1,4,1,5,9,2,6,5,4};
 
     string s("abc");
-
+#if __cplusplus > 201402L
     // Computes the sum of all even numbers in the sequence above
     auto total =
             from_array (ints)
@@ -90,4 +90,5 @@ int PlayCppLinq ()
     for (auto x: something)
     	cout << "t>" << x << endl;
     return total;
+#endif
 }

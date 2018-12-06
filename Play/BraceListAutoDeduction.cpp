@@ -11,6 +11,6 @@ void BraceListAutoDeduction()
 	auto x4{ 3.0 }; // decltype(x4) is double
 	for (auto &x : x2)
 		cout << x << endl;
-	cout << " " << x3 << " " << x4 << endl;
+	// not sure why this doesn't work ! - cout << " " << x3 << " " << x4 << endl;
 }
 

@@ -1,3 +1,4 @@
+#if __cplusplus > 201402L
 //#include "precompiled.h"
 #include <vector>
 #include <iostream>
@@ -20,7 +21,7 @@ auto scores = std::vector<std::tuple<std::string, int>> {
 		{"Steve", 33},
 		{"John", 55},
 		{"Steve", 77},
-		{"John", 84},
+		{"John", 84}
 		};
 
 void CompileTimeTest()
@@ -482,3 +483,4 @@ void CompileTimeTest()
 //}
 
 ///[count]
+#endif

@@ -34,6 +34,7 @@ extern void ExceptionPlay();
 extern void RandomPlay();
 extern void TuplePlay();
 extern void AssertPlay();
+extern void DateTimePlay();
 int PlayCppLinq ();
 
 
@@ -49,6 +50,7 @@ int main() {
 	//FoldingExpressionsPlay();
 	//BraceListAutoDeduction();
 	//ConstExpressions();
+	DateTimePlay();
     //GeneralAutoPlay();
 	//OverridePlay();
 	//PointerPlay();
@@ -56,5 +58,5 @@ int main() {
 	//ExceptionPlay();
 	//RandomPlay();
 	//TuplePlay();
-	AssertPlay();
+	//AssertPlay();
 }
